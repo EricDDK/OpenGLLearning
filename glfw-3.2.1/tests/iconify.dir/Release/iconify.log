@@ -1,0 +1,21 @@
+﻿生成启动时间为 2018-9-21 14:17:58。
+     1>项目“D:\MyProgramme\OpenGL\glfw-3.2.1\tests\iconify.vcxproj”在节点 4 上(Build 个目标)。
+     1>CustomBuild:
+         Building Custom Rule D:/MyProgramme/OpenGL/glfw-3.2.1/tests/CMakeLists.txt
+         CMake does not need to re-run because D:/MyProgramme/OpenGL/glfw-3.2.1/tests/CMakeFiles/generate.stamp is up-to-date.
+       ClCompile:
+         E:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I"D:\MyProgramme\OpenGL\glfw-3.2.1\deps" /I"D:\MyProgramme\OpenGL\glfw-3.2.1\include" /nologo /W3 /WX- /O2 /Ob2 /Oy- /D WIN32 /D _WINDOWS /D NDEBUG /D _CRT_SECURE_NO_WARNINGS /D "CMAKE_INTDIR=\"Release\"" /D _MBCS /Gm- /MD /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"iconify.dir\Release\\" /Fd"iconify.dir\Release\vc120.pdb" /Gd /TC /analyze- /errorReport:prompt "D:\MyProgramme\OpenGL\glfw-3.2.1\tests\iconify.c" "D:\MyProgramme\OpenGL\glfw-3.2.1\deps\getopt.c" "D:\MyProgramme\OpenGL\glfw-3.2.1\deps\glad.c"
+         iconify.c
+         getopt.c
+         glad.c
+         正在生成代码...
+       Link:
+         E:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\MyProgramme\OpenGL\glfw-3.2.1\tests\Release\iconify.exe" /INCREMENTAL:NO /NOLOGO ..\src\Release\glfw3.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:"D:/MyProgramme/OpenGL/glfw-3.2.1/tests/Release/iconify.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /ENTRY:"mainCRTStartup" /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:/MyProgramme/OpenGL/glfw-3.2.1/tests/Release/iconify.lib" /MACHINE:X86 /SAFESEH  /machine:X86 iconify.dir\Release\iconify.obj
+         iconify.dir\Release\getopt.obj
+         iconify.dir\Release\glad.obj
+         iconify.vcxproj -> D:\MyProgramme\OpenGL\glfw-3.2.1\tests\Release\iconify.exe
+     1>已完成生成项目“D:\MyProgramme\OpenGL\glfw-3.2.1\tests\iconify.vcxproj”(Build 个目标)的操作。
+
+生成成功。
+
+已用时间 00:00:04.36

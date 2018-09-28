@@ -1,0 +1,19 @@
+﻿生成启动时间为 2018-9-21 14:16:48。
+     1>项目“D:\MyProgramme\OpenGL\glfw-3.2.1\tests\icon.vcxproj”在节点 2 上(Build 个目标)。
+     1>CustomBuild:
+         Building Custom Rule D:/MyProgramme/OpenGL/glfw-3.2.1/tests/CMakeLists.txt
+         CMake does not need to re-run because D:/MyProgramme/OpenGL/glfw-3.2.1/tests/CMakeFiles/generate.stamp is up-to-date.
+       ClCompile:
+         E:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I"D:\MyProgramme\OpenGL\glfw-3.2.1\deps" /I"D:\MyProgramme\OpenGL\glfw-3.2.1\include" /Zi /nologo /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _CRT_SECURE_NO_WARNINGS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"icon.dir\Debug\\" /Fd"icon.dir\Debug\vc120.pdb" /Gd /TC /analyze- /errorReport:prompt "D:\MyProgramme\OpenGL\glfw-3.2.1\tests\icon.c" "D:\MyProgramme\OpenGL\glfw-3.2.1\deps\glad.c"
+         icon.c
+         glad.c
+         正在生成代码...
+       Link:
+         E:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\MyProgramme\OpenGL\glfw-3.2.1\tests\Debug\icon.exe" /INCREMENTAL /NOLOGO ..\src\Debug\glfw3.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:/MyProgramme/OpenGL/glfw-3.2.1/tests/Debug/icon.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /ENTRY:"mainCRTStartup" /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:/MyProgramme/OpenGL/glfw-3.2.1/tests/Debug/icon.lib" /MACHINE:X86 /SAFESEH  /machine:X86 icon.dir\Debug\icon.obj
+         icon.dir\Debug\glad.obj
+         icon.vcxproj -> D:\MyProgramme\OpenGL\glfw-3.2.1\tests\Debug\icon.exe
+     1>已完成生成项目“D:\MyProgramme\OpenGL\glfw-3.2.1\tests\icon.vcxproj”(Build 个目标)的操作。
+
+生成成功。
+
+已用时间 00:00:03.28

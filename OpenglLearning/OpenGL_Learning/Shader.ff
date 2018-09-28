@@ -1,0 +1,9 @@
+//片元着色器代码，这里用ff命名是因为vs会把fs误认为F#的代码，会各种报错，所以暂时修改了
+#version 330 core
+out vec4 FragColor;
+in vec3 ourColor;
+//uniform vec4 ourColor;
+void main()
+{
+	FragColor = vec4(ourColor, 1.0f);
+}
