@@ -8,34 +8,6 @@
 void framebuffer_size_callback(GLFWwindow* window, int width, int height);
 void processInput(GLFWwindow *window);
 
-//顶点着色代码
-const char* vertexShaderSource = "#version 330 core\n"
-"layout (location = 0) in vec3 aPos;\n"
-"out vec3 outColor;"
-"void main()\n"
-"{\n"
-"	gl_Position = vec4(aPos.x, aPos.y, aPos.z, 1.0);\n"
-"	outColor = vec3(0.5f, 0.0f, 0.0f);\n"
-"}\0";	//千万别忘记这个\0
-
-//片元着色器代码
-const char* fragmentShaderSource = "#version 330 core\n"
-"out vec4 FragColor;\n"
-//"in vec3 outColor;\n"
-"uniform vec4 outColor;\n"
-"void main()\n"
-"{\n"
-"	FragColor = outColor;\n"
-"}\0";	//千万别忘记这个\0
-
-////片元着色器代码1
-//const char* fragmentShaderSource1 = "#version 330 core\n"
-//"out vec4 FragColor;\n"
-//"void main()\n"
-//"{\n"
-//"	FragColor = vec4(1.0f, 1.0f, 0.1f, 1.0f);\n"
-//"}\0";	//千万别忘记这个\0
-
 float vertices[] = {
 	-0.5f, -0.5f, 0.0f,		//左
 	0.5f, -0.5f, 0.0f,		//右
