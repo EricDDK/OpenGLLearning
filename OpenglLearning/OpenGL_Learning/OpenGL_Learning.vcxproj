@@ -39,8 +39,8 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-    <IncludePath>D:\MyProgramme\OpenGL\include;$(IncludePath)</IncludePath>
-    <LibraryPath>D:\MyProgramme\OpenGL\lib\Debug;$(LibraryPath)</LibraryPath>
+    <IncludePath>E:\work\OpenGLLearning\include;$(IncludePath)</IncludePath>
+    <LibraryPath>E:\work\OpenGLLearning\lib\Debug;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <IncludePath>D:\MyProgramme\OpenGL\include;$(IncludePath)</IncludePath>
@@ -81,10 +81,14 @@
   <ItemGroup>
     <ClInclude Include="glad.h" />
     <ClInclude Include="Shader.h" />
+    <ClInclude Include="stb_image.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Shader.ff" />
     <None Include="Shader.vs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="beauty.jpg" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

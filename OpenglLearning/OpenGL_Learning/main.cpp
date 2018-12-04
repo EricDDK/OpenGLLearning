@@ -5,23 +5,21 @@
 #include "iostream"
 #include "Shader.h"
 
+#define STB_IMAGE_IMPLEMENTATION
+#include "stb_image.h"
+
 void framebuffer_size_callback(GLFWwindow* window, int width, int height);
 void processInput(GLFWwindow *window);
 
 float vertices[] = {
-	-0.5f, -0.5f, 0.0f,		//左
-	0.5f, -0.5f, 0.0f,		//右
-	0.0f, 0.5f, 0.0f,		//上
-	1.0f, 0.0f, 0.0f,
-	0.75f, 0.5f, 0.0f,
-	0.5, 0.0f, 0.0f
+	//位置                  // 颜色                 //纹理坐标
+	0.5f, 0.5f, 0.0f, 1.0f, 0.0f, 0.0f, 1.0f, 1.0f,   //右上角
+	0.5f, -0.5f, 0.0f, 0.0f, 1.0f, 0.0f, 1.0f, 0.0f,   //右下角
+	-0.5f, -0.5f, 0.0f, 0.0f, 0.0f, 1.0f, 0.0f, 0.0f,   //左下角
+	-0.5f, 0.5f, 0.0f, 1.0f, 1.0f, 0.0f, 0.0f, 1.0f    //左上角
+
 };
-float rectVertices[] = {
-	0.5f, 0.5f, 0.0f,   //右上角
-	0.5f, -0.5f, 0.0f,  //右下角
-	-0.5f, -0.5f, 0.0f, //左下角
-	-0.5f, 0.5f, 0.0f   //左上角
-};
+
 unsigned int indices[] = {
 	0, 1, 3,    //第一个三角形
 	1, 2, 3 //第二个三角形
@@ -61,37 +59,48 @@ int main()
 	//！创建我们的着色器
 	Shader shader("Shader.vs", "Shader.ff");
 
-	//第一个
+	//第一个环境
 	unsigned int VBO, VAO;
-	//VAO 顶点数组对象,保存对顶点属性的调用
 	glGenVertexArrays(1, &VAO);
 	glBindVertexArray(VAO);
-	glGenBuffers(1, &VBO);  //生成唯一ID
-	glBindBuffer(GL_ARRAY_BUFFER, VBO);  //指定为顶点缓存
-	//参数1：我们的顶点数据需要拷贝到的地方。（之前我们绑定的VBO）
-	//参数2：数组的大小
-	//参数3：数组的地址
-	//参数4：指定显卡要采用什么方式来管理我们的数据，GL_STATIC_DRAW表示这些数据不会经常改变。
-	glBufferData(GL_ARRAY_BUFFER, sizeof(vertices)/2, vertices, GL_STATIC_DRAW);  //将顶点数据复制到VBO
-	//指明顶点格式
-	//起始顶点的偏移为0，每个位置分量占用4字节的空间，一个顶点占用12字节空间。是连续的
-	glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 0, (void*)0);
+
+	glGenBuffers(1, &VBO);
+	glBindBuffer(GL_ARRAY_BUFFER, VBO);
+	glBufferData(GL_ARRAY_BUFFER, sizeof(vertices), vertices, GL_STATIC_DRAW);
+
+	glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 8 * sizeof(float), (void*)0);
 	glEnableVertexAttribArray(0);
+	//颜色属性
+	glVertexAttribPointer(1, 3, GL_FLOAT, GL_FALSE, 8 * sizeof(float), (void*)(3 * sizeof(float)));
+	glEnableVertexAttribArray(1);
+	//纹理属性
+	glVertexAttribPointer(2, 2, GL_FLOAT, GL_FALSE, 8 * sizeof(float), (void*)(6 * sizeof(float)));
+	glEnableVertexAttribArray(2);
 
-	//////第二个
-	////unsigned int VBO1, VAO1;
-	////glGenVertexArrays(1, &VAO1);
-	////glBindVertexArray(VAO1);
-	////glGenBuffers(1, &VBO1);  //生成唯一ID
-	////glBindBuffer(GL_ARRAY_BUFFER, VBO1);  //指定为顶点缓存
-	////glBufferData(GL_ARRAY_BUFFER, sizeof(vertices) / 2, vertices + 9, GL_STATIC_DRAW);
-	////glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 0, (void*)0);
-	////glEnableVertexAttribArray(0);
+	unsigned int EBO;
+	glGenBuffers(1, &EBO);
+	glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, EBO);
+	glBufferData(GL_ELEMENT_ARRAY_BUFFER, sizeof(indices), indices, GL_STATIC_DRAW);
 
-	///*unsigned int EBO;
-	//glGenBuffers(1, &EBO);
-	//glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, EBO);
-	//glBufferData(GL_ELEMENT_ARRAY_BUFFER, sizeof(indices), indices, GL_STATIC_DRAW);*/
+	//纹理
+	unsigned int texture;
+	glGenTextures(1, &texture);
+	glBindTexture(GL_TEXTURE_2D, texture);
+	//设置纹理包装和过滤的方式
+	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_REPEAT);
+	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_REPEAT);
+	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR_MIPMAP_LINEAR);
+	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
+	int width, height, nrChannels;
+	stbi_set_flip_vertically_on_load(true);
+	unsigned char* data = stbi_load("beauty.jpg", &width, &height, &nrChannels, 0);
+	if (data) {
+		glTexImage2D(GL_TEXTURE_2D, 0, GL_RGB, width, height, 0, GL_RGB, GL_UNSIGNED_BYTE, data);
+		glGenerateMipmap(GL_TEXTURE_2D);
+	}
+	else
+		std::cout << "无法加载问题，请检查代码或资源是否有误。" << std::endl;
+	stbi_image_free(data);
 
 	while (!glfwWindowShouldClose(window))
 	{
@@ -111,14 +120,9 @@ int main()
 		* 这里是一个习惯，上面的操作把属性都保存到了VAO中，这里只需要绑定就可以
 		* 如果要显示的东西不同，也只需要在这里绑定不同的东西就可以显示
 		*/
+		glBindTexture(GL_TEXTURE_2D, texture);
 		glBindVertexArray(VAO);
-		glDrawArrays(GL_TRIANGLES, 0, 3);
-
-		/*glUseProgram(shaderProgram1);
-		glBindVertexArray(VAO1);
-		glDrawArrays(GL_TRIANGLES, 0, 3);*/
-
-		//glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, 0);
+		glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, 0);
 
 		glfwSwapBuffers(window);
 		glfwPollEvents();

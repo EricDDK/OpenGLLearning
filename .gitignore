@@ -1,6 +1,8 @@
 
 *.sdf
 *.v12.suo
+/Debug
+/Release
 
 # # Prerequisites
 # *.d
