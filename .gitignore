@@ -1,8 +1,16 @@
 
 *.sdf
 *.v12.suo
+*.pdb
+*.tlog
+
 /Debug
 /Release
+
+[Dd]ebug/
+[Rr]elease/
+
+
 
 # # Prerequisites
 # *.d

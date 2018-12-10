@@ -48,5 +48,23 @@
     <Image Include="beauty.jpg">
       <Filter>资源文件</Filter>
     </Image>
+    <Image Include="1.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="1.jpg">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="1.png">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="035.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="container.jpg">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="awesomeface.png">
+      <Filter>资源文件</Filter>
+    </Image>
   </ItemGroup>
 </Project>

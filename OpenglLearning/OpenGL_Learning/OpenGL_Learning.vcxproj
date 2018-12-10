@@ -88,7 +88,13 @@
     <None Include="Shader.vs" />
   </ItemGroup>
   <ItemGroup>
+    <Image Include="035.bmp" />
+    <Image Include="1.bmp" />
+    <Image Include="1.jpg" />
+    <Image Include="1.png" />
+    <Image Include="awesomeface.png" />
     <Image Include="beauty.jpg" />
+    <Image Include="container.jpg" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
