@@ -3,6 +3,7 @@
 *.v12.suo
 *.pdb
 *.tlog
+*.opensdf
 
 # # Prerequisites
 # *.d
