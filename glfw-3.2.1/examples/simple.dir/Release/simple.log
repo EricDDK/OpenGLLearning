@@ -1,0 +1,22 @@
+﻿生成启动时间为 2018-9-21 14:18:07。
+     1>项目“D:\MyProgramme\OpenGL\glfw-3.2.1\examples\simple.vcxproj”在节点 3 上(Build 个目标)。
+     1>CustomBuild:
+         Building Custom Rule D:/MyProgramme/OpenGL/glfw-3.2.1/examples/CMakeLists.txt
+         CMake does not need to re-run because D:/MyProgramme/OpenGL/glfw-3.2.1/examples/CMakeFiles/generate.stamp is up-to-date.
+       ClCompile:
+         E:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I"D:\MyProgramme\OpenGL\glfw-3.2.1\deps" /I"D:\MyProgramme\OpenGL\glfw-3.2.1\include" /nologo /W3 /WX- /O2 /Ob2 /Oy- /D WIN32 /D _WINDOWS /D NDEBUG /D _CRT_SECURE_NO_WARNINGS /D "CMAKE_INTDIR=\"Release\"" /D _MBCS /Gm- /MD /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"simple.dir\Release\\" /Fd"simple.dir\Release\vc120.pdb" /Gd /TC /analyze- /errorReport:prompt "D:\MyProgramme\OpenGL\glfw-3.2.1\examples\simple.c" "D:\MyProgramme\OpenGL\glfw-3.2.1\deps\glad.c"
+         simple.c
+         glad.c
+         正在生成代码...
+       ResourceCompile:
+         C:\Program Files (x86)\Windows Kits\8.1\bin\x86\rc.exe /D WIN32 /D _WINDOWS /D NDEBUG /D _CRT_SECURE_NO_WARNINGS /D "CMAKE_INTDIR=\\\"Release\\\"" /l"0x0409" /I"D:\MyProgramme\OpenGL\glfw-3.2.1\deps" /I"D:\MyProgramme\OpenGL\glfw-3.2.1\include" /nologo /fo"simple.dir\Release\glfw.res" D:\MyProgramme\OpenGL\glfw-3.2.1\examples\glfw.rc 
+       Link:
+         E:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\MyProgramme\OpenGL\glfw-3.2.1\examples\Release\simple.exe" /INCREMENTAL:NO /NOLOGO ..\src\Release\glfw3.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:"D:/MyProgramme/OpenGL/glfw-3.2.1/examples/Release/simple.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /ENTRY:"mainCRTStartup" /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:/MyProgramme/OpenGL/glfw-3.2.1/examples/Release/simple.lib" /MACHINE:X86 /SAFESEH  /machine:X86 simple.dir\Release\glfw.res
+         simple.dir\Release\simple.obj
+         simple.dir\Release\glad.obj
+         simple.vcxproj -> D:\MyProgramme\OpenGL\glfw-3.2.1\examples\Release\simple.exe
+     1>已完成生成项目“D:\MyProgramme\OpenGL\glfw-3.2.1\examples\simple.vcxproj”(Build 个目标)的操作。
+
+生成成功。
+
+已用时间 00:00:04.66
