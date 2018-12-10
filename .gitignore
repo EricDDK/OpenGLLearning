@@ -4,6 +4,14 @@
 *.pdb
 *.tlog
 
+/Debug
+/Release
+
+[Dd]ebug/
+[Rr]elease/
+
+
+
 # # Prerequisites
 # *.d
 
