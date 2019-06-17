@@ -1,0 +1,6 @@
+﻿  Building Custom Rule E:/work/MyGithub/opengl_learning/glfw-3.3/tests/CMakeLists.txt
+  opacity.c
+  glad_gl.c
+  Generating Code...
+  opacity.vcxproj -> E:\work\MyGithub\opengl_learning\glfw-3.3\build\tests\Debug\opacity.exe
+  opacity.vcxproj -> E:/work/MyGithub/opengl_learning/glfw-3.3/build/tests/Debug/opacity.pdb (Full PDB)

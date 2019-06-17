@@ -1,0 +1,8 @@
+﻿  Building Custom Rule E:/work/MyGithub/opengl_learning/glfw-3.3/tests/CMakeLists.txt
+  glfwinfo.c
+  getopt.c
+  glad_gl.c
+  glad_vulkan.c
+  Generating Code...
+  glfwinfo.vcxproj -> E:\work\MyGithub\opengl_learning\glfw-3.3\build\tests\Debug\glfwinfo.exe
+  glfwinfo.vcxproj -> E:/work/MyGithub/opengl_learning/glfw-3.3/build/tests/Debug/glfwinfo.pdb (Full PDB)

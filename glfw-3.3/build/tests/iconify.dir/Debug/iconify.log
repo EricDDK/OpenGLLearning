@@ -1,0 +1,7 @@
+﻿  Building Custom Rule E:/work/MyGithub/opengl_learning/glfw-3.3/tests/CMakeLists.txt
+  iconify.c
+  getopt.c
+  glad_gl.c
+  Generating Code...
+  iconify.vcxproj -> E:\work\MyGithub\opengl_learning\glfw-3.3\build\tests\Debug\iconify.exe
+  iconify.vcxproj -> E:/work/MyGithub/opengl_learning/glfw-3.3/build/tests/Debug/iconify.pdb (Full PDB)

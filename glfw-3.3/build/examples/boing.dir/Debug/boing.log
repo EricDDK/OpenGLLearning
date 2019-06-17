@@ -1,0 +1,6 @@
+﻿  Building Custom Rule E:/work/MyGithub/opengl_learning/glfw-3.3/examples/CMakeLists.txt
+  boing.c
+  glad_gl.c
+  Generating Code...
+  boing.vcxproj -> E:\work\MyGithub\opengl_learning\glfw-3.3\build\examples\Debug\boing.exe
+  boing.vcxproj -> E:/work/MyGithub/opengl_learning/glfw-3.3/build/examples/Debug/boing.pdb (Full PDB)

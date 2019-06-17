@@ -1,0 +1,6 @@
+﻿  Building Custom Rule E:/work/MyGithub/opengl_learning/glfw-3.3/tests/CMakeLists.txt
+  icon.c
+  glad_gl.c
+  Generating Code...
+  icon.vcxproj -> E:\work\MyGithub\opengl_learning\glfw-3.3\build\tests\Debug\icon.exe
+  icon.vcxproj -> E:/work/MyGithub/opengl_learning/glfw-3.3/build/tests/Debug/icon.pdb (Full PDB)

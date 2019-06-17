@@ -1,0 +1,6 @@
+﻿  Building Custom Rule E:/work/MyGithub/opengl_learning/glfw-3.3/examples/CMakeLists.txt
+  splitview.c
+  glad_gl.c
+  Generating Code...
+  splitview.vcxproj -> E:\work\MyGithub\opengl_learning\glfw-3.3\build\examples\Debug\splitview.exe
+  splitview.vcxproj -> E:/work/MyGithub/opengl_learning/glfw-3.3/build/examples/Debug/splitview.pdb (Full PDB)

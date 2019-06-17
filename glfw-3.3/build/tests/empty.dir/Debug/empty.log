@@ -1,0 +1,7 @@
+﻿  Building Custom Rule E:/work/MyGithub/opengl_learning/glfw-3.3/tests/CMakeLists.txt
+  empty.c
+  tinycthread.c
+  glad_gl.c
+  Generating Code...
+  empty.vcxproj -> E:\work\MyGithub\opengl_learning\glfw-3.3\build\tests\Debug\empty.exe
+  empty.vcxproj -> E:/work/MyGithub/opengl_learning/glfw-3.3/build/tests/Debug/empty.pdb (Full PDB)

@@ -1,0 +1,6 @@
+﻿  Building Custom Rule E:/work/MyGithub/opengl_learning/glfw-3.3/examples/CMakeLists.txt
+  sharing.c
+  glad_gl.c
+  Generating Code...
+  sharing.vcxproj -> E:\work\MyGithub\opengl_learning\glfw-3.3\build\examples\Debug\sharing.exe
+  sharing.vcxproj -> E:/work/MyGithub/opengl_learning/glfw-3.3/build/examples/Debug/sharing.pdb (Full PDB)

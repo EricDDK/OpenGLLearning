@@ -1,0 +1,7 @@
+﻿  Building Custom Rule E:/work/MyGithub/opengl_learning/glfw-3.3/tests/CMakeLists.txt
+  events.c
+  getopt.c
+  glad_gl.c
+  Generating Code...
+  events.vcxproj -> E:\work\MyGithub\opengl_learning\glfw-3.3\build\tests\Debug\events.exe
+  events.vcxproj -> E:/work/MyGithub/opengl_learning/glfw-3.3/build/tests/Debug/events.pdb (Full PDB)

@@ -1,0 +1,6 @@
+﻿  Building Custom Rule E:/work/MyGithub/opengl_learning/glfw-3.3/tests/CMakeLists.txt
+  tearing.c
+  glad_gl.c
+  Generating Code...
+  tearing.vcxproj -> E:\work\MyGithub\opengl_learning\glfw-3.3\build\tests\Debug\tearing.exe
+  tearing.vcxproj -> E:/work/MyGithub/opengl_learning/glfw-3.3/build/tests/Debug/tearing.pdb (Full PDB)

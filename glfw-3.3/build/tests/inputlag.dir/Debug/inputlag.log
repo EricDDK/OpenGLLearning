@@ -1,0 +1,7 @@
+﻿  Building Custom Rule E:/work/MyGithub/opengl_learning/glfw-3.3/tests/CMakeLists.txt
+  inputlag.c
+  getopt.c
+  glad_gl.c
+  Generating Code...
+  inputlag.vcxproj -> E:\work\MyGithub\opengl_learning\glfw-3.3\build\tests\Debug\inputlag.exe
+  inputlag.vcxproj -> E:/work/MyGithub/opengl_learning/glfw-3.3/build/tests/Debug/inputlag.pdb (Full PDB)
