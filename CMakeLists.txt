@@ -7,8 +7,22 @@ include_directories("./include")
 LINK_DIRECTORIES("./libs")
 
 add_executable(
-    main_0
+    main_1_1
     project/1.1_hello_windows/main.cpp
     project/glad.c
 )
-target_link_libraries(main_0 glfw3 ${OPENGL_gl_LIBRARY})
+target_link_libraries(main_1_1 glfw3 ${OPENGL_gl_LIBRARY})
+
+add_executable(
+    main_1_2_1
+    project/1.2_hello_triangle/main.cpp
+    project/glad.c
+)
+target_link_libraries(main_1_2_1 glfw3 ${OPENGL_gl_LIBRARY})
+
+add_executable(
+    main_1_2_2
+    project/1.2_hello_triangle/main_2.cpp
+    project/glad.c
+)
+target_link_libraries(main_1_2_2 glfw3 ${OPENGL_gl_LIBRARY})
