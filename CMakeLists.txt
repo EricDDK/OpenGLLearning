@@ -8,7 +8,7 @@ LINK_DIRECTORIES("./libs")
 
 add_executable(
     main_0
-    main.cpp
-    glad.c
+    project/1.1_hello_windows/main.cpp
+    project/glad.c
 )
 target_link_libraries(main_0 glfw3 ${OPENGL_gl_LIBRARY})
