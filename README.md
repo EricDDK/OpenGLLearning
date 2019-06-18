@@ -1,2 +1,2 @@
 # OpenGLLearning
-learn OpenGL and according to the url:https://www.jianshu.com/p/a7bc9020f0a3
+learn OpenGL and according to the url:https://learnopengl-cn.github.io/01%20Getting%20started/01%20OpenGL/
