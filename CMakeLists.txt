@@ -43,8 +43,14 @@ target_link_libraries(main_1_3_2 glfw3 ${OPENGL_gl_LIBRARY})
 
 add_executable(
     main_1_3_3
-    project/1.3_shader/shader.h
     project/1.3_shader/main_3.cpp
     project/glad.c
 )
 target_link_libraries(main_1_3_3 glfw3 ${OPENGL_gl_LIBRARY})
+
+add_executable(
+    main_1_4
+    project/1.4_texture/main.cpp
+    project/glad.c
+)
+target_link_libraries(main_1_4 glfw3 ${OPENGL_gl_LIBRARY})

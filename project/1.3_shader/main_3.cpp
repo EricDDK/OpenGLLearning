@@ -1,11 +1,11 @@
 #include <glad/glad.h>
 #include <GLFW/glfw3.h>
-#include "shader.h"
+#include "shader/shader.h"
 
 #include <iostream>
 
-static int WIDTH = 800;
-static int HEIGHT = 600;
+static int WIDTH = 1136;
+static int HEIGHT = 640;
 
 void processInput(GLFWwindow *window)
 {
