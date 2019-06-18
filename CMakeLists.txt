@@ -54,3 +54,10 @@ add_executable(
     project/glad.c
 )
 target_link_libraries(main_1_4 glfw3 ${OPENGL_gl_LIBRARY})
+
+add_executable(
+    main_1_4_2
+    project/1.4_texture/main_2.cpp
+    project/glad.c
+)
+target_link_libraries(main_1_4_2 glfw3 ${OPENGL_gl_LIBRARY})
