@@ -42,7 +42,6 @@ add_executable(
     project/glad.c
 )
 target_link_libraries(main_1_2_1 ${LIBS})
-
 add_executable(
     main_1_2_2
     project/1.2_hello_triangle/main_2.cpp
@@ -56,14 +55,12 @@ add_executable(
     project/glad.c
 )
 target_link_libraries(main_1_3 ${LIBS})
-
 add_executable(
     main_1_3_2
     project/1.3_shader/main_2.cpp
     project/glad.c
 )
 target_link_libraries(main_1_3_2 ${LIBS})
-
 add_executable(
     main_1_3_3
     project/1.3_shader/main_3.cpp
@@ -77,7 +74,6 @@ add_executable(
     project/glad.c
 )
 target_link_libraries(main_1_4 ${LIBS})
-
 add_executable(
     main_1_4_2
     project/1.4_texture/main_2.cpp
@@ -98,14 +94,12 @@ add_executable(
     project/glad.c
 )
 target_link_libraries(main_1_6 ${LIBS})
-
 add_executable(
     main_1_6_2
     project/1.6_coordinate_system/main_2.cpp
     project/glad.c
 )
 target_link_libraries(main_1_6_2 ${LIBS})
-
 add_executable(
     main_1_6_3
     project/1.6_coordinate_system/main_3.cpp
@@ -119,3 +113,9 @@ add_executable(
     project/glad.c
 )
 target_link_libraries(main_1_7 ${LIBS})
+add_executable(
+    main_1_7_2
+    project/1.7_camera/main_2.cpp
+    project/glad.c
+)
+target_link_libraries(main_1_7_2 ${LIBS})
