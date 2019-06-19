@@ -7,7 +7,7 @@ include_directories("./include")
 LINK_DIRECTORIES("./libs")
 
 if(WIN32)
-  set(LIBS glfw3 opengl32 assimp)
+  set(LIBS glfw3 opengl32)
 elseif(UNIX AND NOT APPLE)
   set(CMAKE_CXX_FLAGS_DEBUG "${CMAKE_CXX_FLAGS_DEBUG} -Wall")
   find_package(OpenGL REQUIRED)
@@ -34,60 +34,60 @@ add_executable(
     project/1.1_hello_windows/main.cpp
     project/glad.c
 )
-target_link_libraries(main_1_1 glfw3 ${OPENGL_gl_LIBRARY} ${LIBS})
+target_link_libraries(main_1_1 ${LIBS})
 
 add_executable(
     main_1_2_1
     project/1.2_hello_triangle/main.cpp
     project/glad.c
 )
-target_link_libraries(main_1_2_1 glfw3 ${OPENGL_gl_LIBRARY} ${LIBS})
+target_link_libraries(main_1_2_1 ${LIBS})
 
 add_executable(
     main_1_2_2
     project/1.2_hello_triangle/main_2.cpp
     project/glad.c
 )
-target_link_libraries(main_1_2_2 glfw3 ${OPENGL_gl_LIBRARY} ${LIBS})
+target_link_libraries(main_1_2_2 ${LIBS})
 
 add_executable(
     main_1_3
     project/1.3_shader/main.cpp
     project/glad.c
 )
-target_link_libraries(main_1_3 glfw3 ${OPENGL_gl_LIBRARY} ${LIBS})
+target_link_libraries(main_1_3 ${LIBS})
 
 add_executable(
     main_1_3_2
     project/1.3_shader/main_2.cpp
     project/glad.c
 )
-target_link_libraries(main_1_3_2 glfw3 ${OPENGL_gl_LIBRARY} ${LIBS})
+target_link_libraries(main_1_3_2 ${LIBS})
 
 add_executable(
     main_1_3_3
     project/1.3_shader/main_3.cpp
     project/glad.c
 )
-target_link_libraries(main_1_3_3 glfw3 ${OPENGL_gl_LIBRARY} ${LIBS})
+target_link_libraries(main_1_3_3 ${LIBS})
 
 add_executable(
     main_1_4
     project/1.4_texture/main.cpp
     project/glad.c
 )
-target_link_libraries(main_1_4 glfw3 ${OPENGL_gl_LIBRARY} ${LIBS})
+target_link_libraries(main_1_4 ${LIBS})
 
 add_executable(
     main_1_4_2
     project/1.4_texture/main_2.cpp
     project/glad.c
 )
-target_link_libraries(main_1_4_2 glfw3 ${OPENGL_gl_LIBRARY} ${LIBS})
+target_link_libraries(main_1_4_2 ${LIBS})
 
 add_executable(
     main_1_5
     project/1.5_transformations/main.cpp
     project/glad.c
 )
-target_link_libraries(main_1_5 glfw3 ${OPENGL_gl_LIBRARY} ${LIBS})
+target_link_libraries(main_1_5 ${LIBS})
