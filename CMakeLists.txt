@@ -112,3 +112,10 @@ add_executable(
     project/glad.c
 )
 target_link_libraries(main_1_6_3 ${LIBS})
+
+add_executable(
+    main_1_7
+    project/1.7_camera/main.cpp
+    project/glad.c
+)
+target_link_libraries(main_1_7 ${LIBS})
