@@ -91,3 +91,10 @@ add_executable(
     project/glad.c
 )
 target_link_libraries(main_1_5 ${LIBS})
+
+add_executable(
+    main_1_6
+    project/1.6_coordinate_system/main.cpp
+    project/glad.c
+)
+target_link_libraries(main_1_6 ${LIBS})
