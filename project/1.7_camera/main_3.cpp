@@ -10,6 +10,7 @@
 #include <glm/gtc/type_ptr.hpp>
 
 #include <iostream>
+#include "camera/camera.h"
 
 static int WIDTH = 800;
 static int HEIGHT = 600;
