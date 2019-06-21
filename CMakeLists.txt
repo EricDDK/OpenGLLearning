@@ -30,6 +30,8 @@ else()
   set(LIBS )
 endif(WIN32)
 
+#####################################           1           ########################################################
+
 add_executable(
     main_1_1
     project/1.1_hello_windows/main.cpp
@@ -132,3 +134,12 @@ add_executable(
     project/glad.c
 )
 target_link_libraries(main_1_7_4 ${LIBS})
+
+#####################################           2           ########################################################
+
+add_executable(
+    main_2.1
+    project/2.1_colors/main.cpp
+    project/glad.c
+)
+target_link_libraries(main_2.1 ${LIBS})
