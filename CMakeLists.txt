@@ -138,8 +138,21 @@ target_link_libraries(main_1_7_4 ${LIBS})
 #####################################           2           ########################################################
 
 add_executable(
-    main_2.1
+    main_2_1
     project/2.1_colors/main.cpp
     project/glad.c
 )
-target_link_libraries(main_2.1 ${LIBS})
+target_link_libraries(main_2_1 ${LIBS})
+
+add_executable(
+    main_2_2
+    project/2.2_basic_lighting/main.cpp
+    project/glad.c
+)
+target_link_libraries(main_2_2 ${LIBS})
+add_executable(
+    main_2_2_2
+    project/2.2_basic_lighting/main_2.cpp
+    project/glad.c
+)
+target_link_libraries(main_2_2_2 ${LIBS})

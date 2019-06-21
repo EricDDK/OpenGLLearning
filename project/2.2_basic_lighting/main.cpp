@@ -141,7 +141,7 @@ int main(int argc, char * argv[])
 	glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 5 * sizeof(float), (void*)0);
 	glEnableVertexAttribArray(0);
 
-	Shader shader("../project/2.1_colors/Shader.vs", "../project/2.1_colors/Shader.fs");
+	Shader shader("../project/2.2_basic_lighting/Shader.vs", "../project/2.2_basic_lighting/Shader.fs");
 	shader.use();
 	shader.setVec3("objectColor", 1.0f, 0.5f, 0.31f);
 	shader.setVec3("lightColor", 1.0f, 1.0f, 1.0f);
