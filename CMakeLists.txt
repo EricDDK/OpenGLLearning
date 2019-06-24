@@ -169,3 +169,10 @@ add_executable(
     project/glad.c
 )
 target_link_libraries(main_2_3 ${LIBS})
+
+add_executable(
+    main_2_4
+    project/2.4_lighting_maps/main.cpp
+    project/glad.c
+)
+target_link_libraries(main_2_4 ${LIBS})
