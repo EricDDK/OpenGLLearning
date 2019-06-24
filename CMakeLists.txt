@@ -162,3 +162,10 @@ add_executable(
     project/glad.c
 )
 target_link_libraries(main_2_2_3 ${LIBS})
+
+add_executable(
+    main_2_3
+    project/2.3_Materials/main.cpp
+    project/glad.c
+)
+target_link_libraries(main_2_3 ${LIBS})
