@@ -158,6 +158,9 @@ int main(int argc, char * argv[])
 	shader.use();
 	shader.setInt("material.diffuse", 0);
 	shader.setInt("material.specular", 1);
+	shader.setFloat("light.constant", 1.0f);
+	shader.setFloat("light.linear", 0.09f);
+	shader.setFloat("light.quadratic", 0.032f);
 
 	glm::vec3 cubePositions[] = {
 		glm::vec3(0.0f,  0.0f,  0.0f),
