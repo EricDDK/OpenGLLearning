@@ -207,3 +207,10 @@ add_executable(
     project/glad.c
 )
 target_link_libraries(main_2_5_4 ${LIBS})
+
+add_executable(
+    main_2_6
+    project/2.6_multiple_lights/main.cpp
+    project/glad.c
+)
+target_link_libraries(main_2_6 ${LIBS})
