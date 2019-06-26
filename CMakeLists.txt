@@ -195,3 +195,15 @@ add_executable(
     project/glad.c
 )
 target_link_libraries(main_2_5_2 ${LIBS})
+add_executable(
+    main_2_5_3
+    project/2.5_light_casters/main_3.cpp
+    project/glad.c
+)
+target_link_libraries(main_2_5_3 ${LIBS})
+add_executable(
+    main_2_5_4
+    project/2.5_light_casters/main_4.cpp
+    project/glad.c
+)
+target_link_libraries(main_2_5_4 ${LIBS})
