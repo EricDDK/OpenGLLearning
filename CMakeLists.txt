@@ -8,7 +8,7 @@ include_directories("./include")
 LINK_DIRECTORIES("./libs")
 
 if(WIN32)
-  set(LIBS glfw3 opengl32)
+  set(LIBS glfw3 opengl32 assimp)
 elseif(UNIX AND NOT APPLE)
   set(CMAKE_CXX_FLAGS_DEBUG "${CMAKE_CXX_FLAGS_DEBUG} -Wall")
   find_package(OpenGL REQUIRED)
@@ -214,3 +214,12 @@ add_executable(
     project/glad.c
 )
 target_link_libraries(main_2_6 ${LIBS})
+
+#####################################           3           ########################################################
+
+add_executable(
+    main_3_1
+    project/3.1_assimp/main.cpp
+    project/glad.c
+)
+target_link_libraries(main_3_1 ${LIBS})
