@@ -134,7 +134,7 @@ int main(int argc, char * argv[])
 	unsigned int cubeTexture = loadTexture("../project/4.1_depth_testing/marble.jpg");
 	unsigned int floorTexture = loadTexture("../project/4.1_depth_testing/metal.png");
 
-	Shader shader("../project/4.1_depth_testing/Shader.vs", "../project/4.1_depth_testing/Shader.fs");
+	Shader shader("../project/4.1_depth_testing/Shader_2.vs", "../project/4.1_depth_testing/Shader_2.fs");
 	shader.use();
 	shader.setInt("texture1", 0);
 
@@ -158,8 +158,7 @@ int main(int argc, char * argv[])
 		shader.setMat4("projection", glm::value_ptr(projection));
 		// cubes
 		glBindVertexArray(cubeVAO);
-		glActiveTexture(GL_TEXTURE0);
-		glBindTexture(GL_TEXTURE_2D, cubeTexture);
+		
 		model = glm::translate(model, glm::vec3(-1.0f, 0.0f, -1.0f));
 		shader.setMat4("model", glm::value_ptr(model));
 		glDrawArrays(GL_TRIANGLES, 0, 36);
@@ -169,7 +168,6 @@ int main(int argc, char * argv[])
 		glDrawArrays(GL_TRIANGLES, 0, 36);
 		// floor
 		glBindVertexArray(planeVAO);
-		glBindTexture(GL_TEXTURE_2D, floorTexture);
 		model = glm::mat4(1.0f);
 		shader.setMat4("model", glm::value_ptr(model));
 		glDrawArrays(GL_TRIANGLES, 0, 6);

@@ -11,7 +11,8 @@ enum Camera_Movement {
 	FORWARD,
 	BACKWARD,
 	LEFT,
-	RIGHT
+	RIGHT,
+	SPACE
 };
 
 // Default camera values
@@ -81,6 +82,8 @@ public:
 			Position -= Right * velocity;
 		if (direction == RIGHT)
 			Position += Right * velocity;
+		if (direction == SPACE)
+			Position += Up * velocity;
 	}
 
 	void ProcessMouseScroll(float yoffset)

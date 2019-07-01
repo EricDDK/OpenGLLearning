@@ -232,3 +232,10 @@ add_executable(
     project/glad.c
 )
 target_link_libraries(main_4_1 ${LIBS})
+
+add_executable(
+    main_4_1_2
+    project/4.1_depth_testing/main_2.cpp
+    project/glad.c
+)
+target_link_libraries(main_4_1_2 ${LIBS})
