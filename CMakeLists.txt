@@ -245,3 +245,10 @@ add_executable(
     project/glad.c
 )
 target_link_libraries(main_4_2 ${LIBS})
+
+add_executable(
+    main_4_3
+    project/4.3_blend/main.cpp
+    project/glad.c
+)
+target_link_libraries(main_4_3 ${LIBS})
