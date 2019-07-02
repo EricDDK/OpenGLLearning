@@ -162,6 +162,7 @@ int main(int argc, char * argv[])
 	shader.setInt("texture1", 0);
 	screenShader.use();
 	screenShader.setInt("screenTexture", 0);
+	screenShader.setFloat("index", 3.0f);
 
 	// framebuffer configuration
 	// -------------------------

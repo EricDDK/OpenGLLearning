@@ -2,10 +2,14 @@
 layout (location = 0) in vec2 aPos;
 layout (location = 1) in vec2 aTexCoords;
 
+uniform float index;
+
 out vec2 TexCoords;
+out float Index;
 
 void main()
 {
+	Index = index;
     TexCoords = aTexCoords;
     gl_Position = vec4(aPos.x, aPos.y, 0.0, 1.0); 
-}  
+}
