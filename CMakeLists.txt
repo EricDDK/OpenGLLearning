@@ -258,3 +258,10 @@ add_executable(
     project/glad.c
 )
 target_link_libraries(main_4_3_2 ${LIBS})
+
+add_executable(
+    main_4_5
+    project/4.5_frame_buffer/main.cpp
+    project/glad.c
+)
+target_link_libraries(main_4_5 ${LIBS})
