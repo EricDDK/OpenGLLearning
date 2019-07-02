@@ -265,3 +265,10 @@ add_executable(
     project/glad.c
 )
 target_link_libraries(main_4_5 ${LIBS})
+
+add_executable(
+    main_4_6_1
+    project/4.6_cubemaps/main.cpp
+    project/glad.c
+)
+target_link_libraries(main_4_6_1 ${LIBS})
