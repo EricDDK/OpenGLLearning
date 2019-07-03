@@ -278,3 +278,10 @@ add_executable(
     project/glad.c
 )
 target_link_libraries(main_4_6_2 ${LIBS})
+
+add_executable(
+    main_4_8_1
+    project/4.8_advanced_glsl/main.cpp
+    project/glad.c
+)
+target_link_libraries(main_4_8_1 ${LIBS})
