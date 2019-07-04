@@ -285,3 +285,10 @@ add_executable(
     project/glad.c
 )
 target_link_libraries(main_4_8_1 ${LIBS})
+
+add_executable(
+    main_4_9_1
+    project/4.9_geometry_shader/main.cpp
+    project/glad.c
+)
+target_link_libraries(main_4_9_1 ${LIBS})
