@@ -298,3 +298,10 @@ add_executable(
     project/glad.c
 )
 target_link_libraries(main_4_9_2 ${LIBS})
+
+add_executable(
+    main_4_10_1
+    project/4.10_instancing/main.cpp
+    project/glad.c
+)
+target_link_libraries(main_4_10_1 ${LIBS})
