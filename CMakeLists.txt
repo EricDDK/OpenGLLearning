@@ -327,3 +327,10 @@ add_executable(
     project/glad.c
 )
 target_link_libraries(main_5_1 ${LIBS})
+
+add_executable(
+    main_5_2
+    project/5.2_gamma_correction/main.cpp
+    project/glad.c
+)
+target_link_libraries(main_5_2 ${LIBS})
