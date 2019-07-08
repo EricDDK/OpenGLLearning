@@ -318,3 +318,12 @@ add_executable(
     project/glad.c
 )
 target_link_libraries(main_4_11 ${LIBS})
+
+#####################################           5           ########################################################
+
+add_executable(
+    main_5_1
+    project/5.1_advanced_lighting/main.cpp
+    project/glad.c
+)
+target_link_libraries(main_5_1 ${LIBS})
