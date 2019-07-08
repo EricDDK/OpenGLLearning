@@ -81,9 +81,10 @@ public:
 		glActiveTexture(GL_TEXTURE0);
 	}
 
-private:
 	/*  äÖÈ¾Êý¾Ý  */
 	unsigned int VAO, VBO, EBO;
+
+private:
 	/*  º¯Êý  */
 	void setupMesh()
 	{
