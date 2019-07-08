@@ -334,3 +334,10 @@ add_executable(
     project/glad.c
 )
 target_link_libraries(main_5_2 ${LIBS})
+
+add_executable(
+    main_5_3_1
+    project/5.3_shadow_mapping/main.cpp
+    project/glad.c
+)
+target_link_libraries(main_5_3_1 ${LIBS})
