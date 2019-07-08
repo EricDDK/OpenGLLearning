@@ -305,3 +305,16 @@ add_executable(
     project/glad.c
 )
 target_link_libraries(main_4_10_1 ${LIBS})
+add_executable(
+    main_4_10_2
+    project/4.10_instancing/main_2.cpp
+    project/glad.c
+)
+target_link_libraries(main_4_10_2 ${LIBS})
+
+add_executable(
+    main_4_11
+    project/4.11_anti_aliasing/main.cpp
+    project/glad.c
+)
+target_link_libraries(main_4_11 ${LIBS})
