@@ -354,3 +354,10 @@ add_executable(
     project/glad.c
 )
 target_link_libraries(main_5_5 ${LIBS})
+
+add_executable(
+    main_5_7
+    project/5.7_HDR/main.cpp
+    project/glad.c
+)
+target_link_libraries(main_5_7 ${LIBS})
