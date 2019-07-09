@@ -347,3 +347,10 @@ add_executable(
     project/glad.c
 )
 target_link_libraries(main_5_3_1_2 ${LIBS})
+
+add_executable(
+    main_5_5
+    project/5.5_normal_mapping/main.cpp
+    project/glad.c
+)
+target_link_libraries(main_5_5 ${LIBS})
