@@ -361,3 +361,17 @@ add_executable(
     project/glad.c
 )
 target_link_libraries(main_5_7 ${LIBS})
+
+add_executable(
+    main_5_8
+    project/5.8_bloom/main.cpp
+    project/glad.c
+)
+target_link_libraries(main_5_8 ${LIBS})
+
+add_executable(
+    main_5_9_1
+    project/5.9_deffered_shading/main.cpp
+    project/glad.c
+)
+target_link_libraries(main_5_9_1 ${LIBS})
